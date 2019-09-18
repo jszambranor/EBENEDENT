@@ -1,6 +1,6 @@
 <?php
 
-class ClassName extends AnotherClass
+class Conexion
 {
     public function __construct()
     {
@@ -14,15 +14,15 @@ class ClassName extends AnotherClass
         $password = "@Ebendentsys593";
 
         try {
-            $con = new PDO('mysql:host=$host;dbname=$db', $user, $password);
+            $con = new PDO("mysql:host=$host;dbname=$db", $user, $password);
         } catch (PDOException $e) {
-            echo "FALLO EN LA CONEXION";
+            echo $e->getMessage()." FALLO EN LA CONEXION";
         }
 
         if (isset($con)) {
             return $con;
         } else {
-            echo "ERROR DE CONEXION";
+            echo "<br>ERROR DE CONEXION";
         }
     }
 }
