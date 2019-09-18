@@ -6,7 +6,7 @@ class ClassName extends AnotherClass
     {
     }
 
-    public function Conexion()
+    public function get_Conexion()
     {
         $host = "35.178.43.117";
         $db = "Ebenedent";
