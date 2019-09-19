@@ -26,3 +26,8 @@ class Conexion
         }
     }
 }
+
+$objConexion = new Conexion();
+$conexion = $objConexion->get_Conexion();
+
+echo var_dump($conexion);
